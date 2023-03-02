@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="controller/config.js"></script>
+</head>
+
+<body ng-app="rou">
+
+    <header> This is header</header>
+    <nav>
+        <a href="#!/list">manager</a>
+        <a href="#!/add">Add</a>
+    </nav>
+
+    <main>
+        <div ng-view></div>
+    </main>
+
+    <footer>this is footer</footer>
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="controller/index.js"></script>
+    <script src="controller/update.js"></script>
+    <script src="controller/add.js"></script>
+    <script src="controller/listController.js"></script>
+    <script src="controller/base64.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+</body>
+
+</html>

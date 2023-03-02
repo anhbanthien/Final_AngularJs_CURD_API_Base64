@@ -1,0 +1,32 @@
+<h1>List User</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                avt
+            </th>
+        <tr>
+    <tbody>
+        <tr ng-repeat="l in ListUser">
+            <td>{{l.id}}</td>
+            <td>{{l.name}}</td>
+            <td>{{l.age}}</td>
+            <td>
+                <img width="30px" height="30px" src="{{l.image}}" alt="" srcset="">
+            </td>
+            <td><button ng-click="onDelete(l.id)">Delete</button></td>
+            <td><button><a href="#!/Update/{{l.id}}">Update</a></button></td>
+        </tr>
+    </tbody>
+    </thead>
+</table>
